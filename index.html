@@ -2,54 +2,97 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>ونش إنقاذ سريع</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ونش إنقاذ الهواري</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
     }
-
-    h1 {
-      color: #e60000;
-    }
-
-    p {
-      font-size: 20px;
-      color: #333;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 15px;
-      padding: 15px 25px;
-      font-size: 18px;
-      border-radius: 10px;
-      text-decoration: none;
+    .header {
+      background-color: #0d1b2a;
       color: white;
+      text-align: center;
+      padding: 1rem;
     }
-
-    .call {
-      background-color: #4CAF50;
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-
-    .whatsapp {
-      background-color: #25D366;
+    .sub-header {
+      background-color: #1b263b;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .contact-box {
+      background-color: #003566;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    .contact-box a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      background-color: #ffc300;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    .map-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    iframe {
+      width: 90%;
+      height: 300px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
+  <div class="header">
+    <h1>ونش إنقاذ الهواري</h1>
+  </div>
+  <div class="sub-header">
+    خدمة سحب سيارات - العاشر من رمضان، القاهرة، وجميع أنحاء الجمهورية
+  </div>
 
-  <h1>🚨 ونش إنقاذ سيارات 24 ساعة 🚨</h1>
-  <p>هل تعطلت سيارتك؟ محتاج ونش يوصل لك فورًا؟</p>
-  <p>نقدم خدمة ونش سريع وآمن في جميع مناطق <strong>القاهرة والجيزة</strong></p>
-  <p>نوصل لك خلال أقل من <strong>30 دقيقة</strong>!</p>
+  <div class="gallery">
+    <img src="images/truck1.jpg" alt="ونش ليلي احترافي">
+    <img src="images/truck2.jpg" alt="ونش يحمل همر صفراء">
+    <img src="images/truck3.jpg" alt="ونش يحمل سيارة فاخرة">
+  </div>
 
-  <a href="tel:01000875230" class="button call">📞 اتصل الآن</a>
-  <a href="https://wa.me/201000875230" class="button whatsapp">💬 تحدث معنا على واتساب</a>
+  <div class="contact-box">
+    للتواصل الفوري عبر الهاتف أو الواتساب:<br>
+    <a href="tel:01000875230">📞 01000875230</a>
+    <a href="https://wa.me/201000875230">💬 واتساب</a>
+  </div>
 
-  <p style="margin-top: 40px;">✅ متاحين 24 ساعة<br>✅ سائقين محترفين<br>✅ أسعار في المتناول</p>
-
+  <div class="map-container">
+    <h3>موقعنا: العاشر من رمضان - مجاورة 49</h3>
+    <iframe src="https://www.google.com/maps?q=30.3081,31.7421&z=15&output=embed"></iframe>
+  </div>
 </body>
 </html>
